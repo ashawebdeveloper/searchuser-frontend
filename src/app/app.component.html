@@ -1,0 +1,56 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="container" ng-app='demos_cfg'>
+
+  <div class="jumbotron header">
+    <div class="col-md-2 text-center"><h2> Verizon </h2></div>
+
+    <div class="col-md-2"><h3> <i>Test Utility </i></h3> </div> <br />
+  </div>
+
+
+  <div>
+    <div class="col-lg-6 col-md-6 col-sm-6 left-panel text-center forms">
+
+      <form>
+        <div class="form-group">
+          <label for="UserId">UserID</label>
+          <input type="search" id="UserId" aria-describedby="searchUser" placeholder="Enter User ID" #userId>
+
+          <input name=""Get User Details  value="Get User Details" class="btn-primary" (click)="getUserDetails(userId.value)" />
+
+        </div>
+      </form>
+
+    </div>
+
+    <div class="col-lg-6  col-md-6 col-sm-6  right-panel">
+
+
+      <table class="table table-bordered user-data-table">
+
+        <thead>
+          <tr>
+            <th scope="col">User ID</th>
+            <th scope="col">Title </th>
+            <th scope="col">Body </th>
+          </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let user of users">
+          <td class="col-sm-4"> {{ user.userId }}</td>
+          <td class="col-md-4"> {{ user.title }}</td>
+          <td class="col-md-4"> {{ user.body }}</td>
+        </tr>
+        </tbody>
+
+
+      </table>
+
+
+    </div>
+
+  </div>
+
+</div>
+

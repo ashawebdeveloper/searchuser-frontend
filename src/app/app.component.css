@@ -1,0 +1,28 @@
+.header{
+  border: 1px solid black;
+}
+.logo{
+  font-size: 20px;
+}
+
+.left-panel{
+  background: #F5EEF8;
+  height: 100%;
+}
+.right-panel{
+  background: #D2B4DE;
+  height: 100%;
+  overflow: auto;
+}
+.row{
+  margin-top: -30px;
+}
+.forms {
+  padding: 20px;
+}
+.user-data-table{
+  height: 100%;
+}
+.jumbotron{
+  margin-bottom: 0;
+}
